@@ -14,7 +14,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
     <link rel="icon" type="image/x-icon" href="images/favicon.ico">
 
-    <script defer src="main.js"></script>
+    <!-- <script defer src="main.js"></script>  -->
 </head>
 
 <body>
@@ -47,16 +47,19 @@
                 <img src="images/google_logo.png"/>
             </div>
 
+    <form action="https://google.com/search" method="GET">
             <div class="search-box">
                 <img class="glass" src="images/glass.png"/>
-                <input id="search-input" class="search-form" type="text"/>
+                <input class="search-form" type="text" name="q" required autofocus  />
                 <img class="voice-icon " src="images/voice-icon.png"/>
 
             </div>
             <section class="btn-box">
-                <button id="search-click" class="search-btn">Google Search</button>
+                <button type="submit" id="search-click" class="search-btn">Google Search</button>
                 <button class="search-btn">I'm Feeling Lucky</button>
             </section>
+            
+        </form>
 
             <div class="language">
                 <h3>Google offered in: <a href="# ">Português (Brasil)</a></h3>
